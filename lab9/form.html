@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formular pentru intrarea în Sistemul Solar</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="form.js"></script>
+  </head>
+  <body>
+    <h3>FORMULAR PENTRU INTRAREA ÎN SISTEMUL SOLAR</h3>
+    
+    <div id="container"> 
+      <form target="_self" method="post" name="ts">
+        <fieldset>
+          <legend>Date personale</legend>
+          <p>
+            <label for="name">Nume complet: </label>
+            <input type="text" name="name" id="name" minlength="3", maxlength="20" required/>
+          </p>
+          <p>
+            <label for="id_inter">ID unic: </label>
+            <input type="text" name="id_inter" id="id_inter" minlength="8" maxlength="20" required pattern="[0-9]*"/>
+          </p>
+          <p>
+            <label for="data_nasterii">Data nașterii: </label>
+            <input type="date" name="data_nasterii" if="data_nasterii" required min="1800-01-01", max="2023-05-24" />
+          </p>
+          <p>
+            <label for="credit">Credit social acumulat: </label>
+            <input type="range" name="credit" id="credit" min="0" max="2000" step="50" required/> 
+          </p>
+          <p>
+            <label for="foto">Fotografie: </label>
+            <input type="file" name="foto" id="foto" accept="image/*"/>
+          </p>
+          <p>
+            <label for="rasa">Rasa: </label>
+            <select id="rasa" name="rasa">
+              <option>Autobot</option>
+              <option selected="">Daimons</option>
+              <option>Deep Ones</option>
+              <option>Experiment</option>
+              <option>Goa'uld</option>
+              <option>Hutt</option>
+              <option>Jawa</option>
+              <option>Kryptonian</option>
+              <option>Mandalorians</option>
+              <option>Martian</option>
+              <option>Protoss</option>
+              <option>Rodian</option>
+              <option>Romulan</option>
+              <option>Tleilaxu</option>
+              <option>Vogon</option>
+              <option>Wookie</option>
+              <option>Xenu</option>
+              <option>Yeti</option>
+              <option>Zerg</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Date de contact</legend>
+          <p>
+            <label for="galaxie">Galaxie: </label>
+            <input type="text" name="galaxie" id="galaxie" required/>
+          </p>
+          <p>
+            <label for="planeta">Planetă natală: </label>
+            <input type="text" name="planeta" if="planeta" required>
+          </p>
+          <p>
+            <label for="adresa">Adreasa completă: </label>
+            <textarea name="adresa" rows="4" cols="30" wrap="hard" resize="none" required>?</textarea>
+          </p>
+          <p>
+            <label for="telefon">Număur de telefon: </label>
+            <input type="text" name="telefon" id="telefon" required pattern="+19[0-9]{7,7}"/>
+          </p>
+          <p>
+            <label for="email">Aresă de email: </label>
+            <input type="email" name="email" id="email" required/>
+          </p>
+          <p>
+            <label for="URL">URL paringă personală: </label>
+            <input type="url" name="URL" id="URL" required/>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Semnalmente fizice</legend>
+          <p>
+            <label for="inaltime">Înălțime (în centrimetri)</label>
+            <input type="number" name="inaltime" id="inaltime" min="10" max="300" required/>
+          </p>
+          <p>
+            <label for="greutate">Greutate (în kilograme)</label>
+            <input type="number" name="greutate" id="greutate" min="1" max="500" required/>
+          </p>
+          <p>
+            <label for="membre">Număr de membre: </label>
+            <input type="number" name="membre" id="membre" required/>
+          </p>
+          <p>
+            <label for="ochi">Număr de ochi: </label>
+            <input type="number" name="ochi" id="ochi" required/>
+          </p>
+          <p>
+            <label for="culoare">Culoare: </label>
+            <input type="color" name="culoare" id="culoare" >
+            <!--TREBUIE SA FAC SI CSS AICI-->
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Vizită</legend>
+          <p>
+            <label for="sosire">Data sosirii: </label>
+            <input type="date" name="sosire" id="sosire" min="2023-05-07" max="2033-05-07" required>
+          </p>
+          <p>
+            <label for="ora">Ora sosirii: </label>
+            <input type="time" name="ora" id="ora" required>
+          </p>
+          <p>
+            <label for="tip">Tipul de vizită</label>
+            <input type="radio" name="tip" id="temp" checked required>
+            <label for="tip">Termporară</label>
+            <input type="radio" name="tip" id="perm" required>
+            <label for="tip">Permanentă</label>
+          </p>
+          <p>
+            <label for="scop">Scopul vizitei: </label>
+            <ul>
+              <li>
+                <input type="checkbox" name="scop" id="inv" required>
+                <label for="scop">Invitatie</label>
+              </li>
+              <li>
+                <input type="checkbox" name="scop" id="vac">
+                <label for="scop">Vacanta</label>
+              </li>
+              <li>
+                <input type="checkbox" name="scop" id="munca">
+                <label for="munca">Munca</label>
+              </li>
+              <li>
+                <input type="checkbox" name="scop" id="altul">
+                <label for="altul">Altul</label>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <label for="altele">Alte detalii: </label>
+            <textarea name="altele" id="altele" cols="30" rows="5"></textarea>
+          </p>
+        </fieldset>
+        <input type="submit" value="Send Request" id="submit">
+      </form>
+    </div>
+  </body>
+</html>
