@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<root>
+  <film gen="comedie">
+    <titlu lb="franceza">Tais-toi!</titlu>
+    <director>Francis Veber</director>
+    <actori>
+      <actor rol="principal">Gérard Depardieu</actor>
+      <actor rol="principal">Jean Reno</actor>
+      <actor rol="secundar">Richard Berry</actor>
+    </actori>
+    <scenarist>Serge Frydman</scenarist>
+    <producator>Saïd Ben Saïd</producator>
+    <an>2003</an>
+    <scor>7.1</scor>
+  </film>
+
+  <film gen="comedie">
+    <titlu lb="franceza">Les visiteurs!</titlu>
+    <director>Jean-Marie Poiré</director>
+    <actori>
+      <actor rol="principal">Christian Clavier</actor>
+      <actor rol="principal">Jean Reno</actor>
+      <actor rol="secundar">Marie-Anne Chazel</actor>
+    </actori>
+    <scenarist>Christian Clavier</scenarist>
+    <producator>Alain Terzian</producator>
+    <an>1993</an>
+    <scor>7.0</scor>
+  </film>
+</root>

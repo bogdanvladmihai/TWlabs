@@ -1,0 +1,36 @@
+{
+  "root": {
+    "film": [
+      {
+        "titlu": "Tais-toi!",
+        "director": "Francis Veber",
+        "actori": {
+          "actor": [
+            "Gérard Depardieu",
+            "Jean Reno",
+            "Richard Berry"
+          ]
+        },
+        "scenarist": "Serge Frydman",
+        "producator": "Saïd Ben Saïd",
+        "an": 2003,
+        "scor": 7.1
+      },
+      {
+        "titlu": "Les visiteurs!",
+        "director": "Jean-Marie Poiré",
+        "actori": {
+          "actor": [
+            "Christian Clavier",
+            "Jean Reno",
+            "Marie-Anne Chazel"
+          ]
+        },
+        "scenarist": "Christian Clavier",
+        "producator": "Alain Terzian",
+        "an": 1993,
+        "scor": 7
+      }
+    ]
+  }
+}

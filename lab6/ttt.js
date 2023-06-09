@@ -1,8 +1,8 @@
 const L = 9;
 
 function read() {
-  var answer = prompt("Hai noroc, zi si tu un nume si hai sa te bat la un X si 0 asa cum trebui.");
-  return prompt("Hai noroc ba " + String(answer) + ". Joci cu X sau cu O (doar cei slabi joaca cu 0...)?");
+  var answer = prompt("Alege un nume: ");
+  return prompt("Alege X sau 0: ");
 }
 
 function initTalbe(table) {
@@ -105,7 +105,7 @@ if (color == 'O') {
 while (!won(table) && !draw(table)) {
   var pos = Number.parseInt(prompt(print(table)));
   while (!valid(pos)) {
-    alert("NU E BINE SEFULE CE FACEM NICI X SI 0 NU STII???");
+    alert("Mutare invalida, incearca din nou!");
   }
   table[pos] = color;
   oppPos = makeRandomMove(table);
@@ -114,9 +114,9 @@ while (!won(table) && !draw(table)) {
 }
 
 if (won(table, color)) {
-  alert("BINE SAFULE!!!! AI INVINS DUMSANUL!!!");
+  alert("Ai castigat!");
 } else if (draw(table)) {
-  alert("Bocanci amandoi, cizme, praf si pulbere de voi");
+  alert("Remiza!");
 } else {
-  alert("TE A BATUT UN CALCULATOR ESTI PE BUNE??? SERIOS??? AHXAXAXAXAXAXAXA");
+  alert("Ai pierdut!");
 }
